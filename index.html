@@ -6,10 +6,31 @@
 			body {
 				background-color: #000;
 			}
+
+			#container {
+				position: relative;
+			}
+
+			#gif {
+				position: absolute;
+				top: 156;
+				left: 320;
+				z-index: 1;
+			}
+
+			#gameboy {
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 20;
+			}
 		</style>
 	</head>
 	
 	<body>
-		<img src="./gameboy.png" />
+		<div id="container">
+			<img id="gif" src="./Seasons_Change_Final.gif" />
+			<img id="gameboy" src="./gameboy.png" />
+		</div>
 	</body>
 </html>
